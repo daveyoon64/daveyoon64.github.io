@@ -1,170 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2020-08-13T18:42:31+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Davey On The Tech</title><subtitle>Software Engineer in California writing about software, web dev, and machine learning </subtitle><author><name>daveyoon64</name><email>your-email@email.com</email></author><entry><title type="html">How to read the syntax section in the Javascript docs</title><link href="http://localhost:4000/how_to_read_js_api_syntax/" rel="alternate" type="text/html" title="How to read the syntax section in the Javascript docs" /><published>2020-08-13T18:00:47+00:00</published><updated>2020-08-13T18:00:47+00:00</updated><id>http://localhost:4000/how_to_read_js_api_syntax</id><content type="html" xml:base="http://localhost:4000/how_to_read_js_api_syntax/">&lt;h1 id=&quot;testing-if-this-actually-works&quot;&gt;Testing if this actually works&lt;/h1&gt;</content><author><name>daveyoon64</name><email>your-email@email.com</email></author><category term="blog" /><category term="javascript" /><category term="syntax" /><category term="API" /><summary type="html">Testing if this actually works</summary></entry><entry><title type="html">Cara ribet memperbarui forked repo</title><link href="http://localhost:4000/cara-memperbarui-fork-repository/" rel="alternate" type="text/html" title="Cara ribet memperbarui forked repo" /><published>2020-01-28T18:00:00+00:00</published><updated>2020-01-28T18:00:00+00:00</updated><id>http://localhost:4000/cara-memperbarui-fork-repository</id><content type="html" xml:base="http://localhost:4000/cara-memperbarui-fork-repository/">&lt;p&gt;Berawal dari saya pengen memperbarui repo yang tua dari suatu organisasi, niatnya pengen rumat ulang nih, ternyata dari orginal reponya ada update, sekalian buat artikel deh, lebih kurang gambaranya seperti ini.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2020-08-13T19:37:08+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Davey On The Tech</title><subtitle>Software Engineer in California writing about software, web dev, and machine learning </subtitle><author><name>daveyoon64</name><email>your-email@email.com</email></author><entry><title type="html">How to read the syntax section in the Javascript docs</title><link href="http://localhost:4000/how_to_read_js_api_syntax/" rel="alternate" type="text/html" title="How to read the syntax section in the Javascript docs" /><published>2020-08-13T18:00:47+00:00</published><updated>2020-08-13T18:00:47+00:00</updated><id>http://localhost:4000/how_to_read_js_api_syntax</id><content type="html" xml:base="http://localhost:4000/how_to_read_js_api_syntax/">&lt;h2 id=&quot;ive-always-wondered-how-to-read-the-syntax-portions-of-apis&quot;&gt;I’ve always wondered how to read the syntax portions of APIs&lt;/h2&gt;
+&lt;p&gt;Admittedly I used to skip this portion of the API, opting to go straight for the code examples. Thought I’d learn how to read it properly now.&lt;/p&gt;
 
-&lt;figure&gt;
-&lt;img src=&quot;/cara-memperbarui-fork-repository/repo.png&quot; alt=&quot;ilustrasi repo yang mau diupdate&quot; /&gt;
-&lt;figcaption&gt;Fig 1. Gambaran ribetnya.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Ada dua cara untuk memperbarui forked repository menggunakan web interface yang disediakan oleh github tapi ribet, atau melalui terminal yang lebih ribet lagi.&lt;/p&gt;
-
-&lt;h3 id=&quot;melalui-github-boring-way-&quot;&gt;Melalui Github (boring way) 💻&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach&quot;&gt;From MDN, syntax for Array.prototype.forEach()&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;&lt;em&gt;arr&lt;/em&gt;&lt;/strong&gt;.forEach&lt;strong&gt;&lt;em&gt;(callback(currentValue [, index [, array]])[, thisArg])&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Buka repo yang hasil fork di Github.&lt;/li&gt;
-  &lt;li&gt;Klik &lt;strong&gt;Pull Requests&lt;/strong&gt; di sebelah kanan, lalu &lt;strong&gt;New Pull Request&lt;/strong&gt;.&lt;/li&gt;
-  &lt;li&gt;Akan memunculkan hasil compare antara repo upstream dengan repo kamu(forked repo), dan jika menyatakan “There isn’t anything to compare.”, tekan link &lt;strong&gt;switching the base&lt;/strong&gt;, yang mana sekarang repo kamu(forked repo) akan dibalik menjadi base repo dan repo upstream menjadi head repo.&lt;/li&gt;
-  &lt;li&gt;Tekan &lt;strong&gt;Create Pull Request&lt;/strong&gt;, beri judul pull request, Tekan &lt;strong&gt;Send Pull Request&lt;/strong&gt;.&lt;/li&gt;
-  &lt;li&gt;Tekan &lt;strong&gt;Merge Pull Request&lt;/strong&gt; dan &lt;strong&gt;Confirm Merge&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;The unitalicized forEach is a literal. Everything else means we’re substituing with our own values.&lt;/li&gt;
+  &lt;li&gt;[] means the argument is optional&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;* &lt;em&gt;pastikan kamu tidak merubah apapun pada forked repo, supaya melakukan merge secara otomatis, kalo tidak ya paling2 konflik.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;So in this example, all we need is an array and a callback function with a currentValue parameter to use forEach().&lt;/p&gt;
 
-&lt;h3 id=&quot;melalui-terminal-️&quot;&gt;Melalui terminal ⌨️&lt;/h3&gt;
-
-&lt;p&gt;Tambahkan remote alamat repository yang aslinya disini tak beri nama &lt;code class=&quot;highlighter-rouge&quot;&gt;upstream&lt;/code&gt;., ganti &lt;code class=&quot;highlighter-rouge&quot;&gt;ORIGINAL_OWNER&lt;/code&gt; dan &lt;code class=&quot;highlighter-rouge&quot;&gt;ORIGINAL_REPO&lt;/code&gt; dengan alamat repo aslimu.&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git add remote upstream git@github.com:ORIGINAL_OWNER/ORIGINAL_REPO.git
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git remote &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; origin    git@github.com:piharpi/www.git &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;fetch&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# forked repo&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; origin    git@github.com:piharpi/www.git &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;push&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# forked repo&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; upstream    git@github.com:ORIGINAL_OWNER/ORIGINAL_REPO.git &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;fetch&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# upstream repo / original repo&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; upstream    git@github.com:ORIGINAL_OWNER/ORIGINAL_REPO.git &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;push&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# upstream repo / original repo&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Checkout ke local branch &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git checkout master
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; Switched to branch &lt;span class=&quot;s1&quot;&gt;'master'&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Jika sudah, Merge local repo dengan remote &lt;code class=&quot;highlighter-rouge&quot;&gt;upstream/master&lt;/code&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git merge upstream/master
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Terakhir push local repo ke remote &lt;code class=&quot;highlighter-rouge&quot;&gt;origin&lt;/code&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git add &lt;span class=&quot;nt&quot;&gt;-A&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;updating origin repo&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; git push &lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt; origin master
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Selamat mencoba cara ribet ini, semoga bisa dipahami, saya sendiri lebih senang melalui terminal, klo ada yang ribet kenapa cari yang mudah.&lt;/p&gt;
-
-&lt;h5 id=&quot;resources&quot;&gt;Resources&lt;/h5&gt;
-
+&lt;h3 id=&quot;tldr-for-how-to-read-api-syntax&quot;&gt;TL;DR for how to read API syntax&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork&quot;&gt;Syncing a fork&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://rick.cogley.info/post/update-your-forked-repository-directly-on-github/#top&quot;&gt;Update your fork directly on Github&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>daveyoon64</name><email>your-email@email.com</email></author><category term="tips" /><category term="git" /><category term="software" /><summary type="html">Berawal dari saya pengen memperbarui repo yang tua dari suatu organisasi, niatnya pengen rumat ulang nih, ternyata dari orginal reponya ada update, sekalian buat artikel deh, lebih kurang gambaranya seperti ini.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/cara-memperbarui-fork-repository/repo.png" /></entry><entry><title type="html">Testing to see if I’m actually updating</title><link href="http://localhost:4000/apa-itu-shell/" rel="alternate" type="text/html" title="Testing to see if I'm actually updating" /><published>2020-01-25T04:58:47+00:00</published><updated>2020-01-25T04:58:47+00:00</updated><id>http://localhost:4000/apa-itu-shell</id><content type="html" xml:base="http://localhost:4000/apa-itu-shell/">&lt;p&gt;&lt;a href=&quot;http://www.youtube.com/watch?v=tc4ROCJYbm0&amp;amp;t=70&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Dulu&lt;/a&gt; Sebelum adanya &lt;abbr title=&quot;Graphical User Interface&quot;&gt;GUI&lt;/abbr&gt; cara user berinteraksi dengan komputer menggunakan &lt;abbr title=&quot;Command Line Interface&quot;&gt;CLI&lt;/abbr&gt; yaitu mengetik baris perintah pada sebuah antarmuka dalam bentuk baris teks seperti 👇.&lt;/p&gt;
-
-&lt;figure&gt;
-&lt;img src=&quot;/apa-itu-shell/terminal_nginx.gif&quot; alt=&quot;installing nginx in ubuntu&quot; /&gt;
-&lt;figcaption&gt;Fig 1. Terminal emulator, instalasi package dan check service.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Jika kamu pernah menggunakan unix/linux mungkin pernah menggunakan program diatas, bahkan mungkin setiap hari menggunakannya untuk mengeksekusi suatu perintah melalui &lt;a href=&quot;http://en.wikipedia.org/wiki/List_of_terminal_emulators&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;terminal emulator&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;User&lt;sup id=&quot;user&quot;&gt;&lt;a href=&quot;#user-ref&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt; tidak bisa secara langsung berkomunikasi dengan sebuah hardware komputer, maka dari itu kita membutuhkan sebuah sistem operasi; &lt;strong&gt;Kernel&lt;/strong&gt; adalah program yang merupakan inti utama dari sistem operasi komputer.&lt;/p&gt;
-
-&lt;figure&gt;
-&lt;img src=&quot;/apa-itu-shell/kernel.png&quot; alt=&quot;kernel central of operating system&quot; /&gt;
-&lt;figcaption&gt;Fig 2. bagan kernel.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Kernel memfasilitasi interaksi antara komponen perangkat keras dan perangkat lunak, berperan untuk menangani permintaan input/ouput dari perangkat lunak, selanjutnya menerjemahkannya ke dalam pemrosesan data untuk diintruksikan ke CPU, sehingga Hardware(cpu, memory, devices) mengerti perintah yang dimaksud dari pengguna.&lt;/p&gt;
-
-&lt;p&gt;Ketika kita menginputkan suatu perintah pada terminal emulator, kernel tidak langsung mengerti perintah yang kita ketik, kita membutuhkan suatu interface sebagai perantara menuju kernel yaitu &lt;strong&gt;Shell&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;figure&gt;
-&lt;img src=&quot;/apa-itu-shell/shell.png&quot; alt=&quot;shell&quot; /&gt;
-&lt;figcaption&gt;Fig 3. bagan komunikasi shell.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;&lt;mark&gt;Shell adalah sebuah command-line interpreter; program yang berperan sebagai penerjemah perintah yang diinputkan oleh User yang melalui terminal&lt;/mark&gt;, sehingga perintah tersebut bisa dimengerti oleh si Kernel.&lt;/p&gt;
-
-&lt;p&gt;Login shell biasanya ditetapkan oleh local System Administrator ketika pada saat pertama user kamu dibuat, kamu bisa lihat login shell yang sedang kamu gunakan dengan perintah dibawah ini.&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$SHELL&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# atau&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$0&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Setiap shell mempunyai default prompt. beberapa shell yang paling umum:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;dollar sign&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;   &lt;span class=&quot;c&quot;&gt;# sh, ksh, bash&lt;/span&gt;
-% &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;percent sign&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;# csh, tcsh&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h5 id=&quot;terminologi-pada-shell-prompt&quot;&gt;Terminologi pada shell prompt&lt;/h5&gt;
-
-&lt;p&gt;Shell prompt adalah tempat dimana kita menuliskan suatu perintah, berikut adalah terminologinya ini membantu, jika kamu ingin mengetahui bagian-bagianya.&lt;/p&gt;
-
-&lt;figure&gt;
-&lt;img src=&quot;/apa-itu-shell/term_shell_prompt.png&quot; alt=&quot;shell&quot; /&gt;
-&lt;figcaption&gt;Fig 4. bagian-bagin dari shell prompt.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Dibawah ini salah satu contoh perintah sederhana untuk menampilkan sebuah arsitektur CPU komputer yang sedang saya gunakan.&lt;/p&gt;
-
-&lt;figure&gt;
-&lt;img src=&quot;/apa-itu-shell/terminal_lscpu.gif&quot; alt=&quot;installing nginx in ubuntu&quot; /&gt;
-&lt;figcaption&gt;Fig 5. menampilkan informasi tentang arsitektur CPU.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Dari perintah yang contohkan, ketika user mengetikan suatu inputan perintah di terminal dan menekan &lt;kbd&gt;ENTER&lt;/kbd&gt;, maka shell akan mengubah perintah user menjadi bahasa yang bisa dipahami oleh kernel, dan Kernel menerjemahkannya ke dalam pemrosesan data untuk diintruksikan ke Hardware sehingga menghasilkan output yg sesuai dengan perintah user.&lt;/p&gt;
-
-&lt;p&gt;Shell mempunyai beberapa macam dan turunan, berikut yang paling umum.&lt;/p&gt;
-
-&lt;figure&gt;
-&lt;img src=&quot;/apa-itu-shell/shell_evolution.png&quot; alt=&quot;shell evolution&quot; /&gt;
-&lt;figcaption&gt;Fig 6. evaluasi shell dari tahun ke tahun.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Sedikit penjelasan dari gambar diatas.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Bourne shell &lt;code class=&quot;highlighter-rouge&quot;&gt;sh&lt;/code&gt;
-Dikembangkan oleh Stephen Bourne di Bell Labs, yang kala itu sebagai pengganti Thompson shell(diciptakan Ken Thompson), banyak sistem unix-like tetap memiliki &lt;code class=&quot;highlighter-rouge&quot;&gt;/bin/sh&lt;/code&gt;—yang mana menjadi symbolic link atau hard link, bahkan ketika shell lain yang digunakan tetap &lt;code class=&quot;highlighter-rouge&quot;&gt;sh&lt;/code&gt; adalah sebagai dasarnya, sebagai kompatibilitas perintah.&lt;/li&gt;
-  &lt;li&gt;Korn shell &lt;code class=&quot;highlighter-rouge&quot;&gt;ksh&lt;/code&gt; Unix shell yang dikembangkan oleh David Korn di Bell Labs,
-inisialiasi pengembangan ini berdasar pada source code Bourne shell, namun juga memiliki fitur &lt;code class=&quot;highlighter-rouge&quot;&gt;csh&lt;/code&gt; dan &lt;code class=&quot;highlighter-rouge&quot;&gt;sh&lt;/code&gt;, pengembanganya pun pada saat saya menulis ini pun terus &lt;a href=&quot;http://github.com/att/ast&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;terawat&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;Bourne again shell &lt;code class=&quot;highlighter-rouge&quot;&gt;bash&lt;/code&gt;
-adalah proyek ini open source &lt;a href=&quot;http://gnu.org/software/bash/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GNU project&lt;/a&gt; memilki kompatibel dengan &lt;code class=&quot;highlighter-rouge&quot;&gt;sh&lt;/code&gt; yang menggabungkan fitur penting dari &lt;code class=&quot;highlighter-rouge&quot;&gt;ksh&lt;/code&gt; dan &lt;code class=&quot;highlighter-rouge&quot;&gt;csh&lt;/code&gt;, dan menjadi salah satu shell yang paling umum digunakan (umumnya menjadi default shell login Linux dan Apple’s macOS Mojave).&lt;/li&gt;
-  &lt;li&gt;Z shell &lt;code class=&quot;highlighter-rouge&quot;&gt;zsh&lt;/code&gt; ini mempunyai wadah komunitasnya disebutnya &lt;a href=&quot;http://ohmyz.sh/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;“Oh My Zsh”&lt;/a&gt;, plug-in dan theme &lt;code class=&quot;highlighter-rouge&quot;&gt;zsh&lt;/code&gt; bisa kita temukan di komunitas ini, saya saat ini menggunakan &lt;code class=&quot;highlighter-rouge&quot;&gt;zsh&lt;/code&gt;, shell ini juga menjadi default dari sistem operasi macOS Catalina, yang menggantikan bash.&lt;/li&gt;
-  &lt;li&gt;friendly interactive shell &lt;code class=&quot;highlighter-rouge&quot;&gt;fish&lt;/code&gt;
-yah sesuai dengan &lt;a href=&quot;http://fishshell.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;deskripsi&lt;/a&gt; di web nya, menurut saya shell ini fun banget, fitur yang saya sukai dari shell ini autosuggestions, dan konfigurasi yang mudah melalui web based.&lt;/li&gt;
+  &lt;li&gt;Underlined words or unitalicized words are considered literals, and are typed just as they appear.&lt;/li&gt;
+  &lt;li&gt;Square brackets ( &lt;strong&gt;[ ]&lt;/strong&gt; ) around an argument indicate that the argument is optional.&lt;/li&gt;
+  &lt;li&gt;Ellipses ( &lt;strong&gt;…&lt;/strong&gt; ) are used to show that the previous argument-prototype may be repeated.&lt;/li&gt;
+  &lt;li&gt;An argument beginning with a minus sign ( &lt;strong&gt;-&lt;/strong&gt; ) is often taken to mean some sort of flag argument even if it appears in a position where a file name could appear.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Masih banyak yang belum dijelaskan pada tulisan ini jika masih tertarik, baca lebih &lt;a href=&quot;http://en.wikipedia.org/wiki/List_of_command-line_interpreters#Operating_system_shells&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;banyak&lt;/a&gt; dan juga &lt;a href=&quot;http://en.wikipedia.org/wiki/Comparison_of_command_shells&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;komparasinya&lt;/a&gt; masing-masing shell.&lt;/p&gt;
-
-&lt;p&gt;Jika kamu tertarik untuk mengubah default shell login pada sistem operasi, kamu bisa menginstall dengan cara mengikuti didokumentasi/cara penginstallan dimasing-masing shell disini saya tidak membahas karena distro yang kita pakai mungkin berbeda-beda.&lt;/p&gt;
-
-&lt;p&gt;Untuk menjadikan default shell login pada OS bisa menggunakan perintah ini.&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# command&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;chsh &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;options] &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;LOGIN]
-
-&lt;span class=&quot;c&quot;&gt;# contoh penggunaan&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;chsh &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; /user/bin/zsh harpi
-&lt;span class=&quot;c&quot;&gt;# mengubah default shell user harpi menjadi zsh shell.&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;reboot
-
-&lt;span class=&quot;c&quot;&gt;# atau kamu juga bisa mengubah file /etc/passwd dan edit secara manual user shellnya.&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# jika masih bingung manfaatkan perintah man untuk melihat manual page.&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;man chsh
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Terakhir untuk tulisan ini, shell memilki berbagai macam, pilihlah shell yang sesuai dengan keinginanmu untuk menunjang produktivitas dan sesuaikan dengan kebutuhan, terlalu banyak plugin dan kebingungan memilih tema itu buruk 😁.&lt;/p&gt;
-
-&lt;p&gt;Terimakasih sudah baca, &lt;em&gt;penulis menerima kritik dan saran.&lt;/em&gt;&lt;/p&gt;
-
-&lt;h5 id=&quot;notes&quot;&gt;Notes&lt;/h5&gt;
-
-&lt;p&gt;&lt;small id=&quot;user-ref&quot;&gt;&lt;sup&gt;&lt;a href=&quot;#user&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt; Manusia yang mengoperasikan dan mengendalikan sistem komputer.&lt;/small&gt;&lt;/p&gt;
-
-&lt;h5 id=&quot;resources&quot;&gt;Resources&lt;/h5&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://developer.ibm.com/tutorials/l-linux-shells/&quot;&gt;Evolution shells in Linux&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.linfo.org/kernel.html&quot;&gt;Kernel Defintion&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.cis.rit.edu/class/simg211/unixintro/Shell.html&quot;&gt;The Shell&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>daveyoon64</name><email>your-email@email.com</email></author><category term="unix/linux" /><category term="cli" /><summary type="html">Dulu Sebelum adanya GUI cara user berinteraksi dengan komputer menggunakan CLI yaitu mengetik baris perintah pada sebuah antarmuka dalam bentuk baris teks seperti 👇.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/apa-itu-shell/shell_evolution.png" /></entry></feed>
+&lt;h3 id=&quot;references&quot;&gt;References&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/10925478/how-to-interpret-api-documentation-function-parameters&quot;&gt;Link to StackOverflow&lt;/a&gt;&lt;/p&gt;</content><author><name>daveyoon64</name><email>your-email@email.com</email></author><category term="blog" /><category term="javascript" /><category term="syntax" /><category term="API" /><summary type="html">I’ve always wondered how to read the syntax portions of APIs Admittedly I used to skip this portion of the API, opting to go straight for the code examples. Thought I’d learn how to read it properly now.</summary></entry></feed>
