@@ -12,7 +12,7 @@ Admittedly I used to skip this portion of the API, opting to go straight for the
 > ***arr***.forEach***(callback(currentValue [, index [, array]])[, thisArg])***
 
 1. The unitalicized forEach is a literal. Everything else means we're substituing with our own values.
-1. [] means the argument is optional
+1. [...] means the argument is optional
 
 So in this example, all we need is an array and a callback function with a currentValue parameter to use forEach().
 
@@ -22,7 +22,7 @@ So in this example, all we need is an array and a callback function with a curre
 - Square brackets ( **[ ]** ) around an argument indicate that the argument is optional.
 - Ellipses ( **...** ) are used to show that the previous argument-prototype may be repeated.
 - An argument beginning with a minus sign ( **-** ) is often taken to mean some sort of flag argument even if it appears in a position where a file name could appear.
-
+- A comma (,) means if you use an optional arg, it needs to be separated with a comma.
 
 ### References
 [Link to StackOverflow](https://stackoverflow.com/questions/10925478/how-to-interpret-api-documentation-function-parameters)
