@@ -28,7 +28,7 @@ if ('') {
 } else {
   console.log('false');
 }
-// writes `false`
+// writes `false` to the console
 ```
 Since `''` is a string, we want to return `true`.
 
@@ -76,4 +76,5 @@ So if it exists, the first character has a UTF-16 code, and `substr()` returns t
 
 ### References
 [MDN String.prototype.substr](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substr)
+
 [MDN String.prototype.charCodeAt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charCodeAt)
